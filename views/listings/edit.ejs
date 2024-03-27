@@ -1,0 +1,46 @@
+<% layout("layouts/boilerplate.ejs") %>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+    <h2 class="mb-2">Edit List</h2>
+    <form action="/listing/<%=list._id  %>?_method=PUT" method="POST" class="needs-validation" enctype="multipart/form-data" novalidate>
+       <div class="mb-3">
+           <label for="title" class="form-label">Title</label>
+           <input type="text" name="title" value="<%= list.title %>" class="form-control" required>
+            <div class="invalid-feedback">Enter a valid title</div>
+       </div>
+       <div class="mb-3">
+           <label for="description" class="form-label">Description</label>
+           <input type="text" name="description" value="<%= list.description %>" class="form-control" required>
+           <div class="invalid-feedback">Enter a small description</div>
+               </div>
+               <div class="row">
+       <div class="mb-3 col-md-4">
+            <label for="price" class="form-label"> Price</label>
+           <input  name="price" value="<%= list.price %>" class="form-control" required>
+           <div class="invalid-feedback">Enter a valid price</div>
+       </div>
+       <div class="mb-3 col-md-8">
+        <label for="country" class="form-label">Country</label>
+        <input type="text" name="country" value="<%= list.country %>" class="form-control" required>
+        <div class="invalid-feedback">Enter a valid country name</div>
+    </div>
+    </div>
+       <div class="mb-3">
+           <label for="location" class="form-label">Location</label>
+           <input type="text" name="location" value="<%= list.location %>" class="form-control" required>
+           <div class="invalid-feedback">Enter a valid location</div>
+       </div>
+       <div class="mb-3">
+        <img src="<%= orignalUrl %>" height="25%" width="30%">
+       </div>
+       <div class="mb-3">
+           <label for="newimage" class="form-label">Upload New Image</label>
+           <input type="file" name="newimage" class="form-control">
+           
+       </div>
+        <button class="btn btn-dark form-btn mb-2"> Confirm Edit</button>
+    </form>
+    </div>
+</div>
+</body>

@@ -1,0 +1,120 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+.container{
+    flex: 1;
+}
+.fa-compass{
+color: #fe424d;
+font-size: 2rem;
+}
+.navbar{
+    margin-bottom: 1rem;
+}
+
+.nav-link{
+    color: #222222 !important;
+}
+
+.f-info-links a{
+    text-decoration: none;
+    color: #222222;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+    color: #222222;
+}
+.f-info-links,
+.f-info-socials{
+    width: 100%;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.f-info-brand{
+    margin-right: 1rem;
+    margin-bottom: -2rem;
+}
+.f-info-socials i{
+    
+    font-size: 1.3rem;
+    margin-right:1rem;
+}
+.f-info{
+    text-align: center;
+    display: flex;
+    height: 8rem;
+    background-color: aliceblue;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* cards */
+.card{
+    border: none !important;
+    margin-bottom:2rem;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0% !important;
+}
+.card-text{
+    font-weight: 400 !important;
+    color: #222222 !important;
+    
+
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: aliceblue;
+}
+
+/* add new list */
+.new-form{
+    margin-bottom: 0rem;
+}
+.form-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* show page */
+.show-img{
+    height: 50vh;
+
+}
+.btns{
+    display: flex;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.review{
+    border: 2px solid black !important;
+    padding-left:10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-right:10px;
+}

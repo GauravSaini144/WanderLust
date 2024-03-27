@@ -1,0 +1,68 @@
+<% layout("layouts/boilerplate.ejs") %>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+    <h2 class="mb-3">Create New List</h2>
+    <div class="new-form">
+    <form action="/listing" method="POST" novalidate class="needs-validation" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="title" placeholder="Enter Title" class="form-control" required>
+            <div class="valid-feedback">Nice Title</div>
+        <div class="invalid-feedback">Title Required</div>
+        </div>
+        
+        <div class="mb-3">
+             <label for="description" class="form-label">Description</label>
+            <input type="text" name="description" placeholder="Enter Description" class="form-control" required>
+            <div class="invalid-feedback">A small description required</div>
+        </div>
+        
+        <div class="row">
+        <div class="mb-3 col-md-4">
+            <label for="price" class="form-label">Price</label>
+            <input name="price" placeholder="Enter Price" class="form-control" required>
+            <div class="invalid-feedback">Enter a valid price</div>
+        </div>
+        <div class="mb-3 col-md-8">
+            <label for="country" class="form-label">Country</label>
+            <input type="text" name="country" placeholder="Enter Country" class="form-control" required>
+            <div class="invalid-feedback">Enter a valid country</div>
+        </div>
+    </div>
+        <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input type="text" name="location" placeholder="Enter Location" class="form-control" required>
+            <div class="invalid-feedback">Enter a valid Location</div>
+        </div>
+    <div class="mb-3">
+        <label class="form-label" for="category">Category</label>
+
+           <select class="form-control" name="category" id="category" required>
+        
+           <option value="Rooms" >Rooms</option>
+           <option value="Iconic_cities">Iconic cities</option>
+           <option value="Beach">Beach</option>
+           <option value="Farms">Farms</option>
+           <option value="Arctic">Arctic</option>
+           <option value="Castles">Castles</option>
+           <option value="Mountains">Mountains</option>
+
+           <div class="invalid_feedback">Select a Category</div>
+        </select>
+    </div>
+        <!-- <div class="mb-3">
+            <label for="image" class="form-label">Image Link</label>
+            <input type="text" name="image" placeholder="Enter Link of Image" class="form-control">
+        </div> -->
+        <div class="mb-3">
+            <label for="imageUpload" class="form-label">Upload Image</label>
+            <input type="file" name="imageUpload" placeholder="Enter Link of Image" class="form-control" required>
+        </div>
+        <button class="btn btn-dark form-btn"> Add List</button>
+    </form>
+
+</div>
+</div>
+</div>
+</body>
