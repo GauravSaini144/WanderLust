@@ -13,7 +13,7 @@
             <div class="card-body">
             <p class="card-text">@<%= singleList.owner.username%></p>
             <p class="card-text"> <%=singleList.description%></p>
-            <p class="card-text">Category <%=singleList.category%></p>
+            
 
             <p class="card-text"> &#8377 <%=singleList.price.toLocaleString("en-in")%> /night</p>
             <p class="card-text"><%=singleList.location%></p>
@@ -31,7 +31,7 @@
         </div> 
         <div class="col-8 offset-2 mt-1 mb-2">
           <% if(currUser) { %>
-          <h4>Leave a review</h4>
+          <h5>Leave a review</h5>
           <form action="/listing/<%=singleList._id%>/reviews" method="POST" novalidate class="needs-validation">
             <div>
               
@@ -66,9 +66,9 @@
           <br>
             <% } %>
             <div class="card col-5 offset-0 show-card">
-          <h4 class="card-text mb-3">All Reviews</h4></div>
+          </div>
           <div class=" row row-cols-lg-4 row-cols-md-3 row-cols-sm-1">
-            
+            <h6 class=" mb-3 ">All Reviews</h6>
             <%for(let review of singleList.reviews){ %>
             <div class="review card col-5 ms-3">
               <div class="card-body">

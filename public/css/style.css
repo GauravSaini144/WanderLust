@@ -118,3 +118,85 @@ font-size: 2rem;
     padding-top: 10px;
     margin-right:10px;
 }
+
+@media only screen and (min-width: 350px) and  (max-width:575px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+       
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    }
+
+    /* cards */
+
+.main-box{
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    border: none !important;
+    margin-bottom:2rem;
+    display: inline-block;
+    
+}
+.box-img{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.box-body{
+    padding: 0% !important;
+}
+.box-text{
+    font-weight: 400 !important;
+    color: #222222 !important;
+    
+
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: aliceblue;
+}
+
+/* add new list */
+.new-form{
+    margin-bottom: 0rem;
+}
+.form-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* show page */
+.show-img{
+    height: 25vh;
+    
+
+}
+.btns{
+    display: flex;
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.review{
+    border: 2px solid black !important;
+    padding-left:10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-right:10px;
+    width: fit-content;
+    background-color: aliceblue;
+}
+}

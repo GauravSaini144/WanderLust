@@ -28,7 +28,7 @@
     display: none;
   }
   #taxbtn{
-    border: 2px solid #fe424d;
+    border: 2px solid #524e4e;
     height: 2.5rem;
     padding: 0.5rem;
     border-radius: 1rem;
@@ -108,19 +108,19 @@
                 <label for="flexSwitchCheckChecked">Display total after taxes</label>
              </div> </div>
     </div>
-    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 main-box">
     <% for(let listing of allListing){%>
-    <div class="card col" >
+    <div class="card col box" >
       <a class="link" href="/listing/<%=listing._id%>"> 
-        <img src="<%=listing.image.url%>" class="card-img-top" alt="..." style="height: 20rem;">
+        <img src="<%=listing.image.url%>" class="card-img-top box-img" alt="..." style="height: 20rem;">
 <!-- ..................... -->
 
   <div class="card-img-overlay">
     
 </div>
 <!-- ............................. -->
-        <div class="card-body">
-          <p class="card-text">
+        <div class="card-body box-body">
+          <p class="card-text box-text">
            <b> <%= listing.title%> <br></b>
             &#8377 <%=listing.price.toLocaleString("en-in")%> /night
             <i class="taxInfo">&nbsp; +18% Tax</i>
