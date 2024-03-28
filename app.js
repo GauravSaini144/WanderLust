@@ -42,7 +42,6 @@ main().then(()=>{
 async function main() {
   await mongoose.connect(UrlDB);
 
-  // use `await mongoose.connect('mongodb://user:password@127.0.0.1:27017/test');` if your database has auth enabled
 }
 
 const store=MongoStore.create({
@@ -99,32 +98,6 @@ app.listen(8080,()=>{
     console.log("server is starting");
 });
 
-// app.get("/testListing",async (req,res)=>{
-//     let sampleListing=new Listing({
-//         title:"New mahal",
-//         description:"Fort in rajasthan",
-//         price:25000,
-//         location:"Rajasthan",
-//         country:"India",
-//     });
-//     // await sampleListing.save().then((res)=>{
-//     //     console.log(res);
-//     // }).catch((err)=>{
-//     //     console.log(err);
-//     // });
-
-// });
-
-// app.get("/demouser",async(req,res)=>{
-  
-//     let fakeuser=new User({
-//         email:"fakeuser@mail.com",
-//         username:"fakeuser kumar"
-//     });
-//     const registeruser=await User.register(fakeuser,"fakepassword");
-//     res.send(registeruser);
-// });
- 
 
 
 app.all("*",(req,res,next)=>{
