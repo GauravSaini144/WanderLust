@@ -11,16 +11,6 @@
  const {storage}=require("../cloudConfig.js");
  const upload = multer({storage});
 
- const validate=(req,res,next)=>{
-    let {error}=listingSchema.validate(req.body);
-    if(error){
-        let errmsg=error.details.map((el)=>el.message).join(",");
-        throw new ExpressError(400,errmsg);
-    }
-    else{
-        next();
-    }
-};
 
  // index route
 router.get("/",wrapAsync(listingController.index));

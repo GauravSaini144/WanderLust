@@ -85,19 +85,20 @@ app.use((req,res,next)=>{
     res.locals.error=req.flash("error");
     res.locals.currUser=req.user;
     next();
-})
+});
 
 app.use("/listing",listings);
 app.use("/listing/:id/reviews",reviews);
 app.use("/",userRouter);
 
-// app.get("/",(req,res)=>{
-//     res.send("I am root");
-// });
+
 app.listen(8080,()=>{
     console.log("server is starting");
 });
-
+app.get("/",async(req,res)=>{
+    let allListing=await Listing.find({});
+    res.render("listings/index.ejs",{allListing});
+})
 
 
 app.all("*",(req,res,next)=>{
