@@ -117,6 +117,7 @@ font-size: 2rem;
     padding-bottom: 10px;
     padding-top: 10px;
     margin-right:10px;
+    box-shadow: 3px 9px 20px rgb(103, 99, 99);
 }
 
 @media only screen and (min-width: 350px) and  (max-width:575px) {
@@ -191,12 +192,13 @@ font-size: 2rem;
 }
 
 .review{
-    border: 2px solid black !important;
+    border: 1px solid black !important;
     padding-left:10px;
     padding-bottom: 10px;
     padding-top: 10px;
     margin-right:10px;
     width: fit-content;
     background-color: aliceblue;
+    box-shadow: 3px 9px 20px rgb(0, 0, 0);
 }
 }

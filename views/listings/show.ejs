@@ -41,7 +41,7 @@
 
               <fieldset class="starability-slot">
                 
-                <input type="radio" id="no-rate" class="input-no-rate" name="review[rating]" value="0" checked aria-label="No rating." />
+                <input type="radio" id="no-rate" class="input-no-rate" name="review[rating]" value="1" checked aria-label="No rating." />
                 <input type="radio" id="first-rate1" name="review[rating]" value="1"/>
                 <label for="first-rate1" title="Terrible">1 star</label>
                 <input type="radio" id="first-rate2" name="review[rating]" value="2" />
@@ -67,8 +67,9 @@
             <% } %>
             <div class="card col-5 offset-0 show-card">
           </div>
+          <h6 class=" mb-3 ">All Reviews</h6>
           <div class=" row row-cols-lg-4 row-cols-md-3 row-cols-sm-1">
-            <h6 class=" mb-3 ">All Reviews</h6>
+            
             <%for(let review of singleList.reviews){ %>
             <div class="review card col-5 ms-3">
               <div class="card-body">
