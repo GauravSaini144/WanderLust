@@ -112,13 +112,52 @@ font-size: 2rem;
 }
 
 .review{
-    border: 2px solid black !important;
+    /* border: 2px solid black !important; */
     padding-left:10px;
     padding-bottom: 10px;
     padding-top: 10px;
     margin-right:10px;
+    background-color:aliceblue ;
     box-shadow: 3px 9px 20px rgb(103, 99, 99);
 }
+/* ........................ */
+#filters{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: normal;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+  }
+  .filters{
+    text-align: center;
+    justify-content: center;
+    margin-right: 2rem;
+    opacity: 0.7;
+  }
+  .filters:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+  .filters p{
+    font-size: 0.8rem;
+  }
+  .taxInfo{
+    display: none;
+  }
+  #taxbtn{
+    border: 2px solid #524e4e;
+    height: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.1rem;
+    background-color: #ffbec2;
+    
+  }
 
 @media only screen and (min-width: 350px) and  (max-width:575px) {
     body{
@@ -192,13 +231,33 @@ font-size: 2rem;
 }
 
 .review{
-    border: 1px solid black !important;
+    /* border: 1px solid black !important; */
     padding-left:10px;
     padding-bottom: 10px;
     padding-top: 10px;
     margin-right:10px;
-    width: fit-content;
+    width: min-content;
     background-color: aliceblue;
     box-shadow: 3px 9px 20px rgb(0, 0, 0);
 }
+.filters{
+    text-align: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    opacity: 0.7;
+  }
+}
+
+@media only screen and (min-width: 767px) and  (max-width:1200px) {
+    .review{
+        /* border: 1px solid black !important; */
+        padding-left:10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-right:10px;
+        width: min-content;
+        width:294rem;
+        background-color: aliceblue;
+        box-shadow: 3px 9px 20px rgb(0, 0, 0);
+    }
 }
